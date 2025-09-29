@@ -1,0 +1,137 @@
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+}
+
+ul{
+    
+    color:black;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+
+
+
+#Product-description-1{
+    border: 5px solid black;
+    padding: 3px;
+    margin: 3px;
+    background-color: rgb(251, 246, 255);
+    display: inline-table;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 50px;
+}
+    
+#Product-description-2{
+    border: 5px solid black;
+    padding: 3px;
+    margin: 3px;
+    background-color: rgb(251, 246, 255);
+    display: inline-table;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 50px;
+}
+
+#Product-description-3{
+    border: 5px solid black;
+    padding: 3px;
+    margin: 3px;
+    background-color: rgb(251, 246, 255);
+    display: inline-table;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 50px;
+}
+
+#Product-description-4{
+    border: 5px solid black;
+    padding: 3px;
+    margin: 3px;
+    background-color: rgb(251, 246, 255);
+    display: inline-table;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 50px;
+}
+
+#Product-description-5{
+    border: 5px solid black;
+    padding: 3px;
+    margin: 3px;
+    background-color: rgb(251, 246, 255);
+    display: inline-table;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 50px;
+}
+
+
+h1{
+    color: rgb(165, 49, 49); 
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+    
+}
+
+nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.884);
+    border: 1px solid;
+    
+}
+
+a{
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+a:hover{
+    background-color: rgb(168, 166, 194);
+    color: rgb(47, 6, 226);
+}
+body{
+    font-family: Arial;
+    margin: 0;
+}
+
+div{
+    
+}
+
+img{
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+#para1{
+    text-align: center;
+}
+
+body{
+    background-color: rgb(253, 213, 248);
+}
+
+footer{
+    color: rgb(19, 19, 22);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 50;
+    text-align: right;
+}
+
+
+
