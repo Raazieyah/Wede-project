@@ -3,11 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Natural Beauty | Contact Us</title>
+    <meta name="Description" content="Where and how to reach out to us,stay up to date through socials.">
+
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" /><!--Interactive map links CSS/JS-->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!--form for contact page(correction)-->
+      <style>
+        .form-container {
+            max-width: 720px; 
+            margin: 20px auto; 
+            padding: 20px; 
+            background: #fffafa; 
+            border: 1px solid #ecdcec; 
+            border-radius: 10px;
+        }
+        label { display: block; margin: 10px 0 6px; }
+        input, textarea, select {
+            width: 100%; padding: 10px; border-radius: 6px; 
+            border: 1px solid #ccc; 
+        }
+        .btn {
+            background: rgb(165, 49, 49);
+            color: #fff; 
+            padding: 12px 20px; 
+            border: none; 
+            border-radius: 6px; 
+            cursor: pointer;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        #map {
+            height: 400px; 
+            width: 90%; 
+            margin: auto; 
+            border: 2px solid #333; 
+            border-radius: 10px;
+        }
+        #Content-container p {
+            font-size: 17px;
+            margin: 8px;
+        }
+    </style>
+
 </head>
+
 <body>
     <nav>
         <a href="index.html">Home</a>
@@ -32,7 +77,8 @@
 
     </main>
 
-    
+    <h2>Find Us</h2><!--heading for interactive map-->
+    <div id="map" style="height: 400px; width: 90%; margin: auto; border: 2px solid #333; border-radius: 10px;"></div>
    
 
     <div id="Content-container">
@@ -59,6 +105,39 @@
 Closed on Weekends & Public Holidays</p>
 
     </div>
-    
+
+    <!--Contact form for Contact page html-->
+    <div class="form-container">
+        <h2>Send Us a Message</h2>
+
+        <form id="contactForm" novalidate>
+
+            <label for="conName">Full Name *</label>
+            <input id="conName" type="text" placeholder="Your full name">
+
+            <label for="conEmail">Email *</label>
+            <input id="conEmail" type="email" placeholder="you@example.com">
+
+            <label for="conPhone">Phone Number</label>
+            <input id="conPhone" type="text" placeholder="e.g., 082 555 0045">
+
+            <label for="conType">Message Type *</label>
+            <select id="conType">
+                <option value="">-- Choose one --</option>
+                <option value="general">General Enquiry</option>
+                <option value="complaint">Complaint</option>
+                <option value="compliment">Compliment</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="conMessage">Your Message *</label>
+            <textarea id="conMessage" rows="6" placeholder="Write your message here..."></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script src="js/formValidation.js"></script>
 </body>
 </html>

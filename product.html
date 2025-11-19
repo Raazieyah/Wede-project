@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Natural Beauty | Our Products</title>
+    <meta name="Description" content="Our Natural Products That are Locally and Ethically Sourced.">
+
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav>
@@ -24,87 +27,113 @@
 
     <div class="Company-logo">
 
-       <img src="images/FONT_logo.png" alt="Natural Beauty Product">
-
-      
-
-      
-
-      
+       <img src="images/FONT_logo.png" alt="Natural Beauty Product" class="thumb">
       
     </div>
+
+    <!--Content and search feature added-->
+    <h2 style="text-align: center;"> search product</h1>
+    <input type="text" id="searchBox" placeholder="Search for product" class="search input">
    
 
     <footer>
         
         <img src="" alt="" srcset="">
 
-        <img src="images/pexels-karolina-grabowska-4041392.jpg" alt="product image" width="300" height="300  ">
+        <img src="images/pexels-karolina-grabowska-4041392.jpg" alt="natural product image" width="300" height="300  ">
+        <!--image optimisation alt tag(seo)-->
 
        
 
     </footer>
 
-    <div id="Product-description-1">
-        <h2>Castor oil</h2>
+    <div id="products-container">
+        <!--product description format changed and adjusted-->
+        <div class="product-section" data-name="castor oil" data-description="moisturises strengthens skin hair growth">
+            <div id="Product-description-1">
+                <h2 class="product-title">Castor oil</h2><!--correct and relevant header tags added(SEO)-->
+                <h3>Benefits for Skin</h3>
+                <ul>
+                    <li>
+                        Castor oil is high in fatty acids and vitamin E. 
+                        It moisturises deeply, strengthens skin and hair, 
+                        encourages growth, and reduces dryness.
+                    </li>
+                </ul>
+                <img src="images/oil-02.jpg" alt="Natural Castor Oil" class="thumb">
+            </div>
+        </div>
 
-        <h3>Benefits for Skin</h3>
-        <ul>
-            <li>☆Castor oil is high in fatty acids and vitamin E, and it profoundly moisturises and strengthens the skin and hair. It encourages healthy hair development, moisturises brows and lashes, and relieves dry skin.</li>
-        </ul>
-        <img src="images/oil-02.jpg" alt="oil">
+        <br>
+         <!--relevant keywords identified and added to all product descriptions(seo)-->
+        <div class="product-section" data-name="olive oil" data-description="vitamins antioxidants soft skin anti ageing">
+            <div id="Product-description-2">
+                <h2 class="product-title">Olive Oil</h2>
+                <h3>Benefits for Skin</h3>
+                <ul>
+                    <li>
+                        Rich in antioxidants and vitamins A, D, E, and K.  
+                        Hydrates the skin and protects against premature ageing.
+                    </li>
+                </ul>
+                <img src="images/show case02.jpg" alt="Organic Olive Oil" class="thumb">
+            </div>
+        </div>
 
-    </div>
-     <br>
-    <div id="Product-description-2">
-        <h2>Olive Oil</h2>
-
-        <h3>Benefits for Skin</h3>
-        <ul>
-            <li>☆Olive Oil
-
-, which is high in antioxidants and vitamins A, D, E, and K, nourishes the skin, locks in moisture, and protects against premature ageing while leaving it soft and luminous.
-</li>
-        </ul>
-        
-        <img src="images/show case02.jpg" alt="">
-    </div>
-     <br>
-    <div id="Product-description-3">
-        <h2>Jojoba oil</h2>
-
-        <h3>Benefits for Skin</h3>
-        <ul>
-            <li>☆Jojoba oil is lightweight and similar to the skin's natural oils. It balances sebum production, moisturises without blocking pores, and is suitable for sensitive or acne-prone skin.</li>
-        </ul>
-        
-        <img src="images/handcraft.jpg" alt="">
-    </div>
-      <br>
-    <div id="Product-description-4">
-        <h2>Almond  oil</h2>
-       
-
-        <h3>Benefits for Skin</h3>
-        <ul>
-            <li>☆Almond oil is gentle and nutrient-rich, making it ideal for treating dry or irritated skin. It softens, evens up skin tone, and reduces puffiness and dark circles under the eyes.</li>
-        </ul>
-        <img src="images/oils-types.jpg" alt="">
-     
-    </div>
-
-    <div id="Product-description-5">
-        <h2>Rosehip  oil</h2>
-
-        <h3>Benefits for Skin</h3>
-        <ul>
-            <li>☆Rosehip oil, a rich source of vitamins A and C, promotes skin renewal, decreases the appearance of scars and fine lines, and gives the face a natural glow.</li>
-        </ul>
-
-        <img src="images/just-product.jpg" alt="">
         <br>
 
+        <div class="product-section" data-name="jojoba oil" data-description="lightweight sebum balance sensitive skin">
+            <div id="Product-description-3">
+                <h2 class="product-title">Jojoba oil</h2>
+                <h3>Benefits for Skin</h3>
+                <ul>
+                    <li>
+                        Lightweight and similar to the skin’s natural oils.  
+                        Balances sebum and moisturises without blocking pores.
+                    </li>
+                </ul>
+                <img src="images/handcraft.jpg" alt="Jojoba Oil" class="thumb">
+            </div>
+        </div>
+
+        <br>
+
+        <div class="product-section" data-name="almond oil" data-description="hydrating smooth skin reducing puffiness dark circles">
+            <div id="Product-description-4">
+                <h2 class="product-title">Almond oil</h2>
+                <h3>Benefits for Skin</h3>
+                <ul>
+                    <li>
+                        Gentle, soothing and nutrient rich.  
+                        Softens skin and reduces dark circles and puffiness.
+                    </li>
+                </ul>
+                <img src="images/oils-types.jpg" alt="Natural Almond Oil for skin" class="thumb">
+            </div>
+        </div>
+
+        <br>
+
+        <div class="product-section" data-name="rosehip oil" data-description="vitamin a c reduces scars lines glow">
+            <div id="Product-description-5">
+                <h2 class="product-title">Rosehip oil</h2>
+                <h3>Benefits for Skin</h3>
+                <ul>
+                    <li>
+                        Rich in vitamins A and C.  
+                        Promotes skin renewal, reduces scars and fine lines.
+                    </li>
+                </ul>
+                <img src="images/just-product.jpg" alt="Rosehip Oil for Natural Skincare" class="thumb">
+            </div>
+        </div>
+
     </div>
+
+    <!--Adding light box-->
+    <div id="lightbox" class="lightbox">
+        <img id="lightbox-img" alt="Expanded view">
+
     
 
     <footer>
@@ -118,6 +147,6 @@
         
         <p>Closed on Weekends & Public Holidays</p>
     </footer>
-    
+    <script src="script.js"></script>
 </body>
 </html>

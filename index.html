@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natural Beauty | Welcome</title>
-    <link rel="stylesheet" href="css/reset.css">
+
+    <title>Natural Beauty | Welcome</title><!--Relevant Title tags given(SEO)-->
+    <meta name="Description" content="Discover Natural Beauty's organic skincare products, including castor oil, jojoba oil, rosehip oil and almond oil. Natural solutions for healthy glowing skin.">
+     <!--Meta descriptions given(SEO)-->
+    <link rel="stylesheet" href="css/reset.css"><!--Contains default style(Part2 correction)-->
    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav>
-        <a href="index.html">Home</a>
+        <a href="index.html">Home</a><!--Clean URL Links Created(SEO)-->
         <a href="about.html">About us</a>
         <a href="product.html">Beauty Products</a>
         <a href="enquiry.html">Your Enquries</a>
@@ -32,8 +35,52 @@
             We are so exited you have chosen to incoporate us into your life.
             Your Skin WIll thank us!
         </P>
+
+    
         <br>
     </div>
+
+    <!--adding interactive element : TABS -->
+    <h2 class="tab-heading">Explore more</h2>
+
+    <div class="tabs">
+        <button class="tab-btn active-tab" data-tab="tab1">Our Mission</button>
+        <button class="tab-btn " data-tab="tab2">Our Promise</button>
+        <button class="tab-btn " data-tab="tab3">Why You Should Choose Us</button>
+    </div>
+
+    <div id="tab1" class="tab-content active">
+        <p>At natural beauty,our mission is to create safe,organic skin that norishes your skin naturally.</p>
+    </div>
+
+    <div id="tab2" class="tab-content">
+        <p>We promise cruelty-free,eco friendly products made with ethically sourced ingredients</p>
+    </div>
+
+    <div id="tab3" class="tab-content">
+        <p>Our skincare is dermatologically tested,naturally formulated, and suitable for all skin types.</p>
+    </div>
+
+    
+
+    <!--Adding light box-->
+    <div id="lightbox" class="lightbox">
+        <img id="lightbox-img" alt="Expanded view">
+
+    </div>
+
+    <!--adding Modal-->
+    <button id="openModal" class="modal-btn"> Special Offer</button>
+    <div idid="modal" class="modal">
+        <div class="modal-content animate slide">
+            <span id="closeModal" class="close">&times;</span>
+
+            <h2>Special Offer</h2>
+            <p>Get 10% off your first order! Use code: <strong>NATURAL10</p>
+        </div>
+    </div>
+
+    
    
 
     <footer>
@@ -55,6 +102,6 @@
        
 
     </footer>
-    
+    <script src="script.js"></script> <!--JavaScript linked to all pages.-->
 </body>
 </html>

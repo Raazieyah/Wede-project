@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Natural Beauty | Enquiry</title>
+    <meta name="Description" content="Welcome to the enquiry page.">
+
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/enquiry.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--(Correction)Form Layout--> 
+    <style>  
+    
+        .form-container { max-width: 820px; margin: 20px auto; padding: 20px; background:#fffafa; border:1px solid #e6dfe6; border-radius:8px; }
+        label{display:block; margin:10px 0 6px;}
+        input[type="text"], input[type="email"], select, textarea, input[type="number"]{
+          width:100%; padding:8px; border:1px solid #ccc; border-radius:4px;
+        }
+        .inline-row{display:flex; gap:10px;}
+        .inline-row > * { flex:1; }
+        .btn { background:rgb(165,49,49); color:white; padding:10px 16px; border:none; cursor:pointer; border-radius:4px; font-weight:600; }
+        .result-box { margin-top:15px; padding:12px; border-radius:6px; background: #f6fff6; border:1px solid #bde5bd; }
+        .hidden { display:none; }
+    </style>
+
 </head>
 <body>
     <nav>
@@ -38,9 +57,62 @@
         <br>
         <p>
             Have a question or need help? Get in touch with us.</p>
-        
+    </div>
 
+    <!--Form container added-->
+    <div class="form-container">
 
+        <form id="enquiryForm" novalidate>
+
+            <label for="enqName">Full Name *</label>
+            <input id="enqName" type="text" placeholder="Your full name">
+
+            <label for="enqEmail">Email *</label>
+            <input id="enqEmail" type="email" placeholder="you@example.com">
+
+            <label for="enqType">Enquiry type *</label>
+            <select id="enqType">
+                <option value="">-- Please choose --</option>
+                <option value="product">Product enquiry</option>
+                <option value="service">Service enquiry</option>
+                <option value="volunteer">Volunteer</option>
+                <option value="sponsor">Sponsorship</option>
+            </select>
+
+            <!--only when product is selected -->
+            <div id="productArea" class="hidden">
+
+                <label for="enqProduct">Select Product *</label>
+                <select id="enqProduct">
+                    <option value="">-- select --</option>
+                    <option value="castor">Castor Oil (R85)</option>
+                    <option value="olive">Olive Oil (R85)</option>
+                    <option value="jojoba">Jojoba Oil (R110)</option>
+                    <option value="almond">Almond Oil (R110)</option>
+                    <option value="rosehip">Rosehip Oil (R110)</option>
+                </select>
+
+                <div class="inline-row">
+                    <div>
+                        <label for="enqQty">Quantity *</label>
+                        <input id="enqQty" type="number" min="1" value="1">
+                    </div>
+
+                    <div>
+                        <label for="enqUrgency">Need by (days)</label>
+                        <input id="enqUrgency" type="number" min="0" value="3">
+                    </div>
+                </div>
+            </div>
+
+            <label for="enqMessage">Additional details</label>
+            <textarea id="enqMessage" rows="4" placeholder="Tell us more about your enquiry"></textarea>
+
+            <button class="btn" type="submit">Submit Enquiry</button>
+
+        </form>
+
+        <div id="enquiryResult" class="result-box hidden"></div>
     </div>
 
     <br>
@@ -55,5 +127,7 @@
        
 
     </footer>
+    <script src="script.js"></script>
+    <script src="js/formValidation.js"></script>
 </body>
 </html>

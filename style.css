@@ -1,3 +1,10 @@
+
+
+/*Corrections made,all previous css files are now added to this css 1 file*/
+
+
+
+
 footer{
     color: rgb(19, 19, 22);
     font-family: Arial, Helvetica, sans-serif;
@@ -40,14 +47,13 @@ body{
     margin: 0;
 }
 
-div{
-    
-}
+
 
 img{
     display: block;
     margin: auto;
     width: 40%;
+    
 }
 
 #para1{
@@ -56,4 +62,331 @@ img{
 
 body{
    background-color: rgb(253, 213, 248);
+}
+
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+}
+
+ul{
+    
+    color:black;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.Content-container{
+    width: 50%;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid;
+    align-items: center;
+}
+
+#Content-container{
+    text-align: center;
+
+}
+
+#Product-description-1{
+    border: 5px solid black;
+    padding: 3px;
+    margin: 3px;
+    background-color: rgb(251, 246, 255);
+    display: inline-table;
+    grid-template-columns: 33% 33% 33%;
+    row-gap: 50px;
+}
+    
+#Product-description-2{
+    border: 5px solid black;
+    padding: 3px;
+    margin: 3px;
+    background-color: rgb(251, 246, 255);
+    display: inline-table;
+    grid-template-columns: 33% 33% 33%;
+    row-gap: 50px;
+}
+
+#Product-description-3{
+    border: 5px solid black;
+    padding: 3px;
+    margin: 3px;
+    background-color: rgb(251, 246, 255);
+    display: inline-table;
+    grid-template-columns: 33% 33% 33%;
+    row-gap: 50px;
+}
+
+#Product-description-4{
+    border: 5px solid black;
+    padding: 3px;
+    margin: 3px;
+    background-color: rgb(251, 246, 255);
+    display: inline-table;
+    grid-template-columns: 33% 33% 33%;
+    row-gap: 50px;
+}
+
+#Product-description-5{/*add all descriptions into 1 block*/
+    border: 5px solid black;
+    padding: 3px;
+    margin: 3px;
+    background-color: rgb(251, 246, 255);
+    display: inline-table;
+    grid-template-columns: 33% 33% 33%;
+    row-gap: 50px;
+}
+
+h2{
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+
+.product-title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+
+}
+/*add media queries back*/
+
+.thumb{
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.thumb:hover{
+    transform: scale(1.05);
+}
+
+.lightbox{
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.9);
+    justify-content: center;
+    align-content: center;
+    zoom: 9999;
+}
+.lightbox img{
+    max-width: 80%;
+    border: 4px solid white;
+    box-shadow: 0 0 20px black;
+}
+
+.lightbox.show{
+    display: flex;
+}
+
+/*tabs elements*/
+.tabs{
+    display: flex;
+    justify-self: center;
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.tabs-btn{
+    padding: 10px 20px;
+    border: 2px solid rgb(165, 49, 49);
+    background: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s
+
+}
+
+.tabs-btn:hover{
+    background: rgb(168, 166, 194);
+    color: white;
+}
+.active-tabs{
+    background: rgb(165, 49, 49);
+    color: white !important;
+}
+
+.tabs-content{/*animation added*/
+    display: none;
+    background: rgb(251, 246, 255);
+    padding: 15px;
+    margin: 15px auto;
+    width: 80%;
+    border: 2px solid rgb(165, 49, 49);
+    animation: fadeIn 0.4s ease in;
+}
+
+/*showing active tab content*/
+.tabs-cont.active{
+    display: block;
+}
+@keyframes fadeIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+/*modal element*/
+.modal-btn{
+    display: none;
+    margin: 20px auto;
+    padding: 10px 25px;
+    background: rgb(165, 49, 49);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s 
+}
+
+.modal-btn:hover{
+    background: rgb(47, 6, 226);
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.65);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.modal-content{
+      background: white;
+      padding: 25px;
+      width: 60%;
+      max-width: 400px;
+      border-radius: 400px;
+      border: 2px solid rgb(165, 49, 49);
+      text-align: center;
+      position: relative;
+}
+
+.close{
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    cursor: pointer;
+}
+
+/*Media queries added as correction(Part 2) and it ensures Mobile Friendliness(SEO) */
+
+/*media queries for a tablet*/
+@media (max-width: 992px) {
+
+    nav{
+        width: 100%;
+        text-align: center;
+    }
+
+    a{
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    body{
+        font-size: 16px;
+    }
+
+    img{
+        width: 60%; /* to show images bigger on tablet */
+    }
+
+    /* Product grids switch to two columns */
+    #Product-description-1,
+    #Product-description-2,
+    #Product-description-3,
+    #Product-description-4,
+    #Product-description-5{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+    h3{
+        font-size: 18px;
+    }
+
+    .product-title{
+        font-size: 26px;
+    }  
+}
+
+/*media query for mobile phone*/
+@media (max-width: 600px) {
+
+    body{
+        font-size: 14px;
+    }
+
+    nav{
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a{
+        padding: 12px;
+        border-bottom: 1px solid #222;
+    }
+
+    /* Stack nav vertically */
+    nav ul{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Make images full width on mobile */
+    img{
+        width: 90%;
+    }
+
+    /* Product grids become ONE COLUMN */
+    #Product-description-1,
+    #Product-description-2,
+    #Product-description-3,
+    #Product-description-4,
+    #Product-description-5{
+        display: block;
+        width: 100%;
+    }
+
+    h1{
+        font-size: 22px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    h3{
+        font-size: 16px;
+    }
+
+    .product-title{
+        font-size: 22px;
+    }
+
+    footer{
+        text-align: center;
+        font-size: 14px;
+    }
 }
